@@ -1,0 +1,52 @@
+{
+  "_note": "query-order 只读返回样本（付款后），用于状态解析回归。已脱敏：订单号、门店、地址、收货人、手机号、payId 均为占位符；金额、状态文本、商品搭配保持真实形态。",
+  "_fetched_at": "2026-10-11 13:28:37",
+  "success": true,
+  "code": 200,
+  "message": "请求成功",
+  "datetime": "2026-10-11 13:28:37",
+  "traceId": "2893cc1c7f9414fa7d83970b622f7123",
+  "data": {
+    "orderId": "1000000000000000000000000001",
+    "orderStatus": "餐厅配餐中",
+    "status": "31",
+    "storeName": "麦当劳示例得来速餐厅",
+    "storeAddress": "示例市示例区示例路1号",
+    "orderProductList": [
+      {
+        "productName": "大堡口福四件套",
+        "productImage": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900015792_320.gif",
+        "quantity": 1,
+        "price": "34.9",
+        "comboItemList": [
+          {"itemName": "双层脆鸡堡", "itemQuantity": 1},
+          {"itemName": "麦乐鸡5块", "itemQuantity": 1},
+          {"itemName": "中薯条", "itemQuantity": 1},
+          {"itemName": "无糖可口可乐中杯", "itemQuantity": 1}
+        ]
+      }
+    ],
+    "totalAmount": "42.8",
+    "realTotalAmount": "42.8",
+    "totalDiscountAmount": "0",
+    "couponList": [],
+    "deliveryInfo": {
+      "deliveryType": "预约送出",
+      "deliveryAddress": "示例小区1号楼",
+      "addressDetail": "1单元101",
+      "customerNickname": "示例用户",
+      "mobilePhone": "138****0000",
+      "expectDeliveryTime": "2026-10-11 13:55:26"
+    },
+    "createTime": "2026-10-11 13:20:51",
+    "deliveryPrice": "6",
+    "realDeliveryPrice": "6",
+    "realPackingFeeTotalPrice": "1.9",
+    "needTableware": false,
+    "productPrice": "34.9",
+    "pickupCode": "",
+    "expirePayTime": "2026-10-11 13:35:51",
+    "payId": "123456789012345678901",
+    "remark": ""
+  }
+}

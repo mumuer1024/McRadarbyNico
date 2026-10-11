@@ -1,0 +1,26 @@
+{
+  "_source": "真实 MCP 只读调用 calculate-price",
+  "_captured_at": "2026-10-10 00:30:13",
+  "_store": "1000001",
+  "_request": {"storeCode": "1000001", "orderType": 1, "beType": 1,
+               "items": [{"productCode": "1450", "quantity": 1},
+                         {"productCode": "3050", "quantity": 1}]},
+  "_note": "请求含 2 个商品，服务端 productList 只返回 1450 —— 3050 被静默丢弃。这是真实观测到的行为。",
+  "success": true,
+  "code": 200,
+  "message": "请求成功",
+  "data": {
+    "productOriginalPrice": 1700,
+    "productPrice": 1700,
+    "originalPrice": 1700,
+    "discount": 0,
+    "price": 1700,
+    "productList": [
+      {"productCode": "1450", "productName": "麦香鸡", "quantity": 1,
+       "originalSubtotal": 1700, "subtotal": 1700}
+    ],
+    "takeWayList": [
+      {"code": "locker-out", "title": "外带", "subtitle": "店外取餐柜"}
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_source": "mcp__mcd-mcp__calculate-price",
+  "_captured_at": "2026-10-10 01:03:58",
+  "_store_code": "1000001",
+  "_note": "第二轮 P0 安全修复时重新观测：请求 {1450 麦香鸡, 3050 可乐中杯}，服务端 productList 仍只回 1450，price=1700 —— 静默丢商品现象可复现。脱敏：仅保留商品编码与金额，未记录任何账户信息。",
+  "_request": {
+    "storeCode": "1000001",
+    "orderType": 1,
+    "beType": 1,
+    "items": [
+      { "productCode": "1450", "quantity": 1 },
+      { "productCode": "3050", "quantity": 1 }
+    ]
+  },
+  "success": true,
+  "code": 200,
+  "message": "请求成功",
+  "data": {
+    "productOriginalPrice": 1700,
+    "productPrice": 1700,
+    "originalPrice": 1700,
+    "discount": 0,
+    "price": 1700,
+    "productList": [
+      {
+        "productCode": "1450",
+        "productName": "麦香鸡",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+      }
+    ],
+    "takeWayList": [
+      { "code": "locker-out", "title": "外带", "subtitle": "店外取餐柜" }
+    ]
+  }
+}

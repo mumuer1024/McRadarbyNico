@@ -1,0 +1,53 @@
+# ---- 运行期状态（绝不提交）----
+data/
+*.tmp
+
+# ---- 敏感信息 ----
+.env
+.env.*
+mcp.json
+mcp.local.json
+*token*
+*secret*
+
+# ---- 内部开发档案（仅本地保留，不公开）----
+# 原始会话记录：含真实下单过程、门店、地址、订单号
+docs/conversation-log/
+# 预演与真实样本：含真实门店/地址/订单号
+rehearsal/
+# 内部开发报告：含真实订单与运行环境路径
+reports/
+# 构建产物：分发包与 ZIP 另行作为 Release 附件发布，不入库
+release/
+
+# ---- 仅本地使用的开发工具（依赖私人会话记录，非公开运行依赖）----
+tools/export_conversation.py
+
+# ---- 构建产物 / 压缩包 ----
+*.zip
+*.tar.gz
+*.7z
+
+# ---- 本地覆盖 / 备份 ----
+*.local.*
+*.bak
+*.bak-*
+*~
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 大体积产物 ----
+*.gif
+*.mp4
+*.png

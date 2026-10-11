@@ -1,0 +1,18 @@
+{
+  "_source": "mcp:calculate-price (storeCode=1000001, orderType=1, beType=1)",
+  "_captured_at": "2026-10-10 01:46:00 (北京时间)",
+  "_note": "请求含不可售商品 → 服务端硬报错 60006（未静默丢弃）；这属于明确失败",
+  "_request": {
+    "storeCode": "1000001",
+    "orderType": 1,
+    "beType": 1,
+    "items": [
+      {"productCode": "1450", "quantity": 1},
+      {"productCode": "9900011349", "quantity": 1}
+    ]
+  },
+  "success": false,
+  "code": 60006,
+  "message": "商品已售罄或不可售，换一个商品或检查orderType/beType",
+  "datetime": "2026-10-10 01:46:00"
+}
